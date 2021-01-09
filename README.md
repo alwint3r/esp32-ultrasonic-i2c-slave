@@ -4,6 +4,15 @@ ESP32 + Ultrasonic Sensor (HY-SRF05) as I2C Slave
 This project demonstrates how one can use ESP32 as an I2C slave that reads and send distance measurement (in cm) upon request by the master device.
 This project is based on the official development platform ESP-IDF and can be compiled, debugged, and uploaded by PlatformIO.
 
+## Wiring Information
+
+Pin | Function
+----|-----------------
+IO4 | Ultrasonic Echo
+IO5 | Ultrasonic Trigger
+IO21| I2C SDA
+IO22| I2C SCL
+
 ## I2C Details
 
 #### Device Address
