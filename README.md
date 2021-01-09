@@ -37,6 +37,11 @@ By default, the upload port is `/dev/ttyUSB0` and the upload speed is `921600` y
 
 ## Known Issues
 
-This project is tested by connecting a NUCLEO F446RE board as the master device. Below are the list of issues found during testing:
+This project is tested by connecting a NUCLEO F446RE board as the master device. You can find the firmware that is used to test this firmware on [alwint3r/stm32f446re-i2c-master-test](https://github.com/alwint3r/stm32f446re-i2c-master-test). Below are the list of issues found during testing:
 
 * The slave device always sends the previous measurement or (n-1)th measurement and not the latest measurement as the response to reading `DISTANCE` register.
+
+
+## Acknowledgement
+
+The code that reads the distance measurement from the HY-SRF05 ultrasonic sensor is basically a modified version of the `ultrasonic` component from [esp-idf-lib](https://github.com/UncleRus/esp-idf-lib) written by [Ruslan V. Uss](github.com/UncleRus).
